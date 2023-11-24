@@ -25,6 +25,17 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
+- name: meta_hysteria2_01
+  type: hysteria2
+  server: 109.104.152.219
+  port: 22998
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  up: 100 Mbps
+  down: 100 Mbps
 - name: meta_hysteria_02
   type: hysteria
   server: 167.160.90.251
@@ -202,12 +213,45 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
+- name: hysteria2_0
+  type: hysteria2
+  server: www.dtku46.xyz
+  port: 49730
+  password: dongtaiwang.com
+  fast-open: true
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: hysteria2_1
+  type: hysteria2
+  server: 108.181.22.155
+  port: 44141
+  password: dongtaiwang.com
+  fast-open: true
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: hysteria2_2
+  type: hysteria2
+  server: www.dtku48.xyz
+  port: 49694
+  password: dongtaiwang.com
+  fast-open: true
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: hysteria2_3
+  type: hysteria2
+  server: 108.181.22.155
+  port: 44141
+  password: dongtaiwang.com
+  fast-open: true
+  sni: www.bing.com
+  skip-cert-verify: true
 proxy-groups:
 - name: 节点选择
   type: select
   proxies:
   - 自动选择
   - DIRECT
+  - meta_hysteria2_01
   - meta_hysteria_02
   - meta_tuic_11
   - meta_tuic_21
@@ -222,12 +266,17 @@ proxy-groups:
   - hysteria_1
   - hysteria_2
   - hysteria_3
+  - hysteria2_0
+  - hysteria2_1
+  - hysteria2_2
+  - hysteria2_3
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - meta_hysteria2_01
   - meta_hysteria_02
   - meta_tuic_11
   - meta_tuic_21
@@ -242,6 +291,10 @@ proxy-groups:
   - hysteria_1
   - hysteria_2
   - hysteria_3
+  - hysteria2_0
+  - hysteria2_1
+  - hysteria2_2
+  - hysteria2_3
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
