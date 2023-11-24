@@ -160,6 +160,138 @@ proxies:
   protocol: udp
   up: 50 Mbps
   down: 100 Mbps
+- name: meta_hysteria_121
+  type: hysteria
+  server: 167.160.90.251
+  port: 48089
+  auth-str: dongtaiwang.com
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+  skip-cert-verify: true
+- name: meta_hysteria2_122
+  type: hysteria2
+  server: 109.104.152.219
+  port: 22998
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  up: 100 Mbps
+  down: 100 Mbps
+- name: meta_tuic_131
+  server: tuic1.freeh1.xyz
+  port: 40981
+  type: tuic
+  uuid: c2faac69-e1c1-4bf5-b8a8-d2ce4d834a66
+  password: dongtaiwang
+  sni: tuic1.freeh1.xyz
+  alpn:
+  - h3
+  request-timeout: 8000
+  udp-relay-mode: native
+  skip-cert-verify: false
+  congestion-controller: bbr
+- name: meta_tuic_141
+  server: tuic3.dtku47.xyz
+  port: 12255
+  type: tuic
+  uuid: ed6a538a-6e66-4f21-a769-4b389bb2f3ab
+  password: dongtaiwang
+  alpn:
+  - h3
+  request-timeout: 8000
+  udp-relay-mode: native
+  congestion-controller: bbr
+- name: meta_tuic_151
+  server: 108.181.24.7
+  port: 23450
+  type: tuic
+  uuid: 3618921b-adeb-4bd3-a2a0-f98b72a674b1
+  password: dongtaiwang
+  sni: bing.com
+  alpn:
+  - h3
+  request-timeout: 8000
+  udp-relay-mode: native
+  skip-cert-verify: true
+  congestion-controller: bbr
+- name: meta_hysteria_161
+  type: hysteria
+  server: www.dtku46.xyz
+  port: 11223
+  auth-str: mqoE9qSoyMFa
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+  skip-cert-verify: true
+- name: meta_tuic_171
+  server: 108.181.22.205
+  port: 50987
+  type: tuic
+  uuid: d6214437-e1b5-4334-9090-8f66b78bea89
+  password: dongtaiwang
+  sni: bing.com
+  alpn:
+  - h3
+  request-timeout: 8000
+  udp-relay-mode: native
+  skip-cert-verify: true
+  congestion-controller: bbr
+- name: meta_tuic_181
+  server: 108.181.22.239
+  port: 19988
+  type: tuic
+  uuid: 485ce799-da5f-46e8-a82b-8ef322d8602f
+  password: dongtaiwang.com
+  sni: bing.com
+  alpn:
+  - h3
+  request-timeout: 8000
+  udp-relay-mode: native
+  skip-cert-verify: true
+  congestion-controller: bbr
+- name: meta_hysteria_191
+  type: hysteria
+  server: www.dtku50.xyz
+  port: 14751
+  sni: www.microsoft.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  auth_str: 6qSZyyl4eTT8hqPMQxdhIgpxQfTyW1Oq6GBwQVhA2vBOw7QIGY
+  up: 2
+  down: 10
+- name: meta_hysteria_201
+  type: hysteria
+  server: 62.204.54.81
+  port: 37899
+  sni: www.microsoft.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  auth_str: OdHFS3zC3HlSYJmc0GLQNKLAlwDbJqEmonVBXmI07T0Ojb1bQB
+  up: 5
+  down: 10
+- name: meta_hysteria_211
+  type: hysteria
+  server: www3.dtku49.xyz
+  port: 58693
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  auth_str: nbdyVMqucpFMmyRiwcRQFI7EeKzJWjPYuks3ZzEhCv6HjeZvbh
+  up: 11
+  down: 55
 - name: hysteria_0
   type: hysteria
   server: 51.158.54.46
@@ -272,6 +404,62 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
+- name: hysteria_8
+  type: hysteria
+  server: 109.104.152.180
+  port: 64502
+  ports: 64502
+  auth_str: kxeFKpB8fhGjP7cO7NNgXYr19ZsqKQMco612ZCfXiaJrojw571
+  up: 80
+  down: 100
+  fast-open: true
+  protocol: udp
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+- name: hysteria_9
+  type: hysteria
+  server: 173.234.25.52
+  port: 20164
+  ports: 20164
+  auth_str: Ljg6NNEATDqP97hdAdHe1lJv7ggtKc0h7zmCCZKCX3qY0LR64F
+  up: 80
+  down: 100
+  fast-open: true
+  protocol: udp
+  sni: www.microsoft.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+- name: hysteria_10
+  type: hysteria
+  server: 109.104.152.149
+  port: 48406
+  ports: 48406
+  auth_str: xfNhrunYJ9GvDXCTktY2bIwhc1EyeyyAbiUMx1UtBOWgI4cMVB
+  up: 80
+  down: 100
+  fast-open: true
+  protocol: udp
+  sni: www.amazon.cn
+  skip-cert-verify: true
+  alpn:
+  - h3
+- name: hysteria_11
+  type: hysteria
+  server: 51.158.54.46
+  port: 11926
+  ports: 11926
+  auth_str: Trz2alKwzCImRAXI3nXfpo1ylpHfqOL8s1vageWKoyjjvWeMVs
+  up: 80
+  down: 100
+  fast-open: true
+  protocol: udp
+  sni: youku.com
+  skip-cert-verify: true
+  alpn:
+  - h3
 - name: hysteria2_0
   type: hysteria2
   server: www.dtku46.xyz
@@ -337,6 +525,17 @@ proxy-groups:
   - meta_tuic_91
   - meta_hysteria_101
   - meta_hysteria_111
+  - meta_hysteria_121
+  - meta_hysteria2_122
+  - meta_tuic_131
+  - meta_tuic_141
+  - meta_tuic_151
+  - meta_hysteria_161
+  - meta_tuic_171
+  - meta_tuic_181
+  - meta_hysteria_191
+  - meta_hysteria_201
+  - meta_hysteria_211
   - hysteria_0
   - hysteria_1
   - hysteria_2
@@ -345,6 +544,10 @@ proxy-groups:
   - hysteria_5
   - hysteria_6
   - hysteria_7
+  - hysteria_8
+  - hysteria_9
+  - hysteria_10
+  - hysteria_11
   - hysteria2_0
   - hysteria2_1
   - hysteria2_2
@@ -364,6 +567,17 @@ proxy-groups:
   - meta_tuic_91
   - meta_hysteria_101
   - meta_hysteria_111
+  - meta_hysteria_121
+  - meta_hysteria2_122
+  - meta_tuic_131
+  - meta_tuic_141
+  - meta_tuic_151
+  - meta_hysteria_161
+  - meta_tuic_171
+  - meta_tuic_181
+  - meta_hysteria_191
+  - meta_hysteria_201
+  - meta_hysteria_211
   - hysteria_0
   - hysteria_1
   - hysteria_2
@@ -372,6 +586,10 @@ proxy-groups:
   - hysteria_5
   - hysteria_6
   - hysteria_7
+  - hysteria_8
+  - hysteria_9
+  - hysteria_10
+  - hysteria_11
   - hysteria2_0
   - hysteria2_1
   - hysteria2_2
@@ -391,6 +609,17 @@ proxy-groups:
   - meta_tuic_91
   - meta_hysteria_101
   - meta_hysteria_111
+  - meta_hysteria_121
+  - meta_hysteria2_122
+  - meta_tuic_131
+  - meta_tuic_141
+  - meta_tuic_151
+  - meta_hysteria_161
+  - meta_tuic_171
+  - meta_tuic_181
+  - meta_hysteria_191
+  - meta_hysteria_201
+  - meta_hysteria_211
   - hysteria_0
   - hysteria_1
   - hysteria_2
@@ -399,6 +628,10 @@ proxy-groups:
   - hysteria_5
   - hysteria_6
   - hysteria_7
+  - hysteria_8
+  - hysteria_9
+  - hysteria_10
+  - hysteria_11
   - hysteria2_0
   - hysteria2_1
   - hysteria2_2
