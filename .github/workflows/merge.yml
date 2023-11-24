@@ -31,7 +31,7 @@ jobs:
       - name: Commit Changes
         run: |
           git config core.ignorecase false
-          git config --local user.email "qianmo0021github.com"
+          git config --local user.email "qianmo0021@github.com"
           git config --local user.name "qianmo0021"
           git add .
           git commit -m "Updated at $(date '+%Y-%m-%d %H:%M:%S')"
