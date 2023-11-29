@@ -41,6 +41,16 @@ proxies:
   port: 11256
   cipher: 2022-blake3-chacha20-poly1305
   password: +/b6Q+CbYg8b823kivADeViRHa7kdBprvhpyTk15QpY=
+- name: meta_hysteria_21
+  type: hysteria
+  server: clash1.dtku47.xyz
+  port: 11223
+  auth-str: O5tQQiW2xKf5
+  alpn:
+  - h3
+  protocol: udp
+  up: 50 Mbps
+  down: 100 Mbps
 - name: meta_hysteria_31
   type: hysteria
   server: clash1.dtku47.xyz
@@ -66,6 +76,16 @@ proxies:
   server: hy1.dtku47.xyz
   port: 11257
   auth-str: oO5q7L6QPSuJ
+  alpn:
+  - h3
+  protocol: udp
+  up: 50 Mbps
+  down: 100 Mbps
+- name: meta_hysteria_61
+  type: hysteria
+  server: hy2.dtku47.xyz
+  port: 15566
+  auth-str: jQrGpwSqp34P
   alpn:
   - h3
   protocol: udp
@@ -102,6 +122,16 @@ proxies:
   request-timeout: 8000
   udp-relay-mode: native
   congestion-controller: bbr
+- name: meta_hysteria_101
+  type: hysteria
+  server: hy1.dtku47.xyz
+  port: 22334
+  auth-str: lASdKzWK0VxL
+  alpn:
+  - h3
+  protocol: udp
+  up: 50 Mbps
+  down: 100 Mbps
 - name: meta_hysteria_111
   type: hysteria
   server: hy1.dtku47.xyz
@@ -245,6 +275,20 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
+- name: hysteria_0
+  type: hysteria
+  server: 51.158.54.46
+  port: 11926
+  ports: 11926
+  auth_str: Trz2alKwzCImRAXI3nXfpo1ylpHfqOL8s1vageWKoyjjvWeMVs
+  up: 80
+  down: 100
+  fast-open: true
+  protocol: udp
+  sni: youku.com
+  skip-cert-verify: true
+  alpn:
+  - h3
 - name: hysteria_1
   type: hysteria
   server: 51.158.54.46
@@ -312,6 +356,20 @@ proxies:
   fast-open: true
   protocol: udp
   sni: www.microsoft.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+- name: hysteria_6
+  type: hysteria
+  server: 109.104.152.149
+  port: 48406
+  ports: 48406
+  auth_str: xfNhrunYJ9GvDXCTktY2bIwhc1EyeyyAbiUMx1UtBOWgI4cMVB
+  up: 80
+  down: 100
+  fast-open: true
+  protocol: udp
+  sni: www.amazon.cn
   skip-cert-verify: true
   alpn:
   - h3
@@ -417,12 +475,15 @@ proxy-groups:
   - DIRECT
   - meta_hysteria_01
   - meta_ss_11
+  - meta_hysteria_21
   - meta_hysteria_31
   - meta_hysteria_41
   - meta_hysteria_51
+  - meta_hysteria_61
   - meta_hysteria_71
   - meta_hysteria_81
   - meta_tuic_91
+  - meta_hysteria_101
   - meta_hysteria_111
   - meta_hysteria_121
   - meta_hysteria2_122
@@ -435,11 +496,13 @@ proxy-groups:
   - meta_hysteria_191
   - meta_hysteria_201
   - meta_tuic_211
+  - hysteria_0
   - hysteria_1
   - hysteria_2
   - hysteria_3
   - hysteria_4
   - hysteria_5
+  - hysteria_6
   - hysteria_7
   - hysteria_8
   - hysteria_9
@@ -456,12 +519,15 @@ proxy-groups:
   proxies:
   - meta_hysteria_01
   - meta_ss_11
+  - meta_hysteria_21
   - meta_hysteria_31
   - meta_hysteria_41
   - meta_hysteria_51
+  - meta_hysteria_61
   - meta_hysteria_71
   - meta_hysteria_81
   - meta_tuic_91
+  - meta_hysteria_101
   - meta_hysteria_111
   - meta_hysteria_121
   - meta_hysteria2_122
@@ -474,11 +540,13 @@ proxy-groups:
   - meta_hysteria_191
   - meta_hysteria_201
   - meta_tuic_211
+  - hysteria_0
   - hysteria_1
   - hysteria_2
   - hysteria_3
   - hysteria_4
   - hysteria_5
+  - hysteria_6
   - hysteria_7
   - hysteria_8
   - hysteria_9
