@@ -308,9 +308,9 @@ proxies:
 - name: hysteria_2
   type: hysteria
   server: 109.104.152.180
-  port: 64502
-  ports: 64502
-  auth_str: kxeFKpB8fhGjP7cO7NNgXYr19ZsqKQMco612ZCfXiaJrojw571
+  port: 59759
+  ports: 59759
+  auth_str: dongtaiwang.com
   up: 80
   down: 100
   fast-open: true
@@ -322,9 +322,9 @@ proxies:
 - name: hysteria_3
   type: hysteria
   server: 109.104.152.180
-  port: 64502
-  ports: 64502
-  auth_str: kxeFKpB8fhGjP7cO7NNgXYr19ZsqKQMco612ZCfXiaJrojw571
+  port: 59759
+  ports: 59759
+  auth_str: dongtaiwang.com
   up: 80
   down: 100
   fast-open: true
@@ -392,9 +392,9 @@ proxies:
 - name: hysteria_8
   type: hysteria
   server: 109.104.152.180
-  port: 64502
-  ports: 64502
-  auth_str: kxeFKpB8fhGjP7cO7NNgXYr19ZsqKQMco612ZCfXiaJrojw571
+  port: 59759
+  ports: 59759
+  auth_str: dongtaiwang.com
   up: 80
   down: 100
   fast-open: true
