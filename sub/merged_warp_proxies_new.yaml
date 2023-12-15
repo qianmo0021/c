@@ -376,8 +376,8 @@ proxies:
 - name: hysteria_6
   type: hysteria
   server: 108.181.22.239
-  port: 41146
-  ports: 41146
+  port: 39967
+  ports: 39967
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -390,8 +390,8 @@ proxies:
 - name: hysteria_7
   type: hysteria
   server: 108.181.22.239
-  port: 41146
-  ports: 41146
+  port: 39967
+  ports: 39967
   auth_str: dongtaiwang.com
   up: 80
   down: 100
@@ -432,8 +432,8 @@ proxies:
 - name: hysteria_10
   type: hysteria
   server: 108.181.22.239
-  port: 41146
-  ports: 41146
+  port: 39967
+  ports: 39967
   auth_str: dongtaiwang.com
   up: 80
   down: 100
